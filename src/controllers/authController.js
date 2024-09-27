@@ -45,4 +45,9 @@ export class AuthController {
       });
     }
   }
+
+  static logout(req, res) {
+    req.session.destroy();
+    res.status(200).json({ success: 'logout feito com sucesso!' });
+  }
 }
