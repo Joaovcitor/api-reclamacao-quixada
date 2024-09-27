@@ -1,0 +1,52 @@
+{
+  "name": "alo-prefeito",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test concurrently \"./node_modules/.bin/mocha\" \"nodemon server.js\"",
+    "start": "nodemon server.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "cpf-cnpj-validator": "^1.0.3",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "init": "^0.1.2",
+    "jsonwebtoken": "^9.0.2",
+    "moment-timezone": "^0.5.45",
+    "node": "^22.9.0",
+    "pdfkit": "^0.15.0",
+    "sequelize": "^6.37.3",
+    "session-file-store": "^1.5.0",
+    "sqlite3": "^5.1.7",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "concurrently": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "supertest": "^7.0.0"
+  }
+}
